@@ -1,0 +1,12 @@
+The following CSS rule might lead to unexpected behavior due to the specificity of selectors:
+
+```css
+div p {
+  color: blue;
+}
+p {
+  color: red;
+}
+```
+
+The `div p` selector is more specific than `p`, so the `color: blue` rule will override `color: red` when applied to paragraph elements within a div. This might be unexpected if the intent was for all paragraph elements to be red. 
