@@ -1,0 +1,12 @@
+To fix this issue, ensure your CSS rules are ordered logically and you understand how selector specificity works. Here's a solution:
+
+```css
+p {
+  color: red;
+}
+div p {
+  color: blue; /* Use only if a different color inside a div is needed*/
+}
+```
+
+Alternatively, if you always want paragraphs to be red, regardless of parent elements, then remove the `div p` rule.
